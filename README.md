@@ -2,7 +2,7 @@
 
 #### Api_Rest: Api foi desenvolvida em node.js  
 
-#### App: front-end bem basico desenvolvido em react.js
+#### App: front-end bem basico desenvolvido em react
 
 #### API
 Desenvolvida com o framework express, com o banco de dados Mongodb. Testes Unitarios desenvolvidos utilizando o framework mocha, a biblioteca chai e o pacote sinon.
@@ -14,7 +14,7 @@ Bem basico e facil de usar.
 
 * Na raiz do projeto executar
 
-* docker compose up -d --build
+* docker compose up -d
 
 * Acesso ao front end: http://localhost:3000
 
@@ -84,7 +84,7 @@ Posteriormente podera ser realizado uma documentancao ultilizando por exemplo a 
 
 ## Teste unitarios
 
-##### Acessar a parta API_REST e rodar o comando npm test.
+##### Acessar a pasta API_REST e rodar o comando npm test.
 
 
 
