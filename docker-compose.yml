@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  ui: 
+    build: ./app
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    depends_on: 
+      - api
+  api:
+    build: ./api_rest
+    ports:
+      - "3030:3030"
+    environment:
+      MONGODB_URI: 'mongodb://mongo:27017/api'
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    ports:
+      - "27017:27017"

@@ -1,0 +1,41 @@
+{
+  "name": "gazin",
+  "version": "1.0.0",
+  "description": "Nodejs Api Rest Desenvolvedores",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha"
+  },
+  "keywords": [
+    "api",
+    "developer",
+    "db"
+  ],
+  "author": "Alisson Seiji Aoki",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "^4.3.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-async-handler": "^1.1.4",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.9",
+    "mongose": "0.0.2-security",
+    "nodemon": "^2.0.7",
+    "rootpath": "^0.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.4"
+  }
+}
