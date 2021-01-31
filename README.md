@@ -1,93 +1,90 @@
-Crud Gazin Desenvolvedores 
+# Crud Gazin Desenvolvedores 
 
-Api_Rest: Api foi desenvolvida em node.js  
+#### Api_Rest: Api foi desenvolvida em node.js  
 
-App: front-end bem basico desenvolvido em react.js
+#### App: front-end bem basico desenvolvido em react.js
 
-API
+#### API
 Desenvolvida com o framework express, com o banco de dados Mongodb. Testes Unitarios desenvolvidos utilizando o framework mocha, a biblioteca chai e o pacote sinon.
 
-APP
+#### APP
 Bem basico e facil de usar.
 
-Instrucoes:
+### Instrucoes:
 
-Na raiz do projeto executar
+* Na raiz do projeto executar
 
-docker compose up -d --build
+* docker compose up -d --build
 
-O banco de dados esta rodando na porta 27017, a API na porta 3030 e frontend na porta 3000.
+* Acesso ao front end: http://localhost:3000
 
-Acesso ao front end: http://localhost:3000
+* O banco de dados esta rodando na porta 27017, a API na porta 3030 e frontend na porta 3000.
 
-API:
+## API:
 
-POST: http://localhost:3030/developers/
+#### POST: http://localhost:3030/developers/
 
-GET: http://localhost:3030/developers/
+#### GET: http://localhost:3030/developers/
 
-PUT: http://localhost:3030/developers/ID
+#### PUT: http://localhost:3030/developers/ID
 
-DELETE: http://localhost:3030/developers/ID
+#### DELETE: http://localhost:3030/developers/ID
 
-/*******************************************************************/
-POST: http://localhost:3030/developers/
 
-Headers Obrigatorios: headers {  "Content-type": "application/json" }
+## POST: http://localhost:3030/developers/
 
-Obrigatorio JSON exemplo:
+###### Headers Obrigatorios: headers {  "Content-type": "application/json" }
 
-{
-    "nome": "Alisson Seiji Aoki",
-    "sexo": "Masculino",
-    "idade": 25,
-    "hobby": "Desenvolver Aplicações",
-    "datanascimento": "1995-08-21"
-}
+###### Obrigatorio JSON exemplo:
 
-API Retorna o ID
-{
-    "id": "6016c644d55d790013f48407"
-}
+    { "nome": "Alisson Seiji Aoki", 
+      "sexo": "Masculino",
+      "idade": 25,
+      "hobby": "Desenvolver Aplicações",
+      "datanascimento": "1995-08-21" }
 
-/*******************************************************************/
-GET: http://localhost:3030/developers/
+###### API Retorna o ID
+    
+    { "id": "6016c644d55d790013f48407" }
+   
 
-Headers Obrigatorios: headers {  "Content-type": "application/json" }
+## GET: http://localhost:3030/developers/
 
-Retorno:
-{
-    "nome": "Alisson",
-    "idade": 10,
-    "sexo": "M",
-    "hobby": "gazin",
-    "datanascimento": "1994-05-05T00:00:00.000Z",
-    "createdDate": "2021-01-31T14:33:29.406Z",
-    "v": 0,
-    "id": "6016bfb9647aa60013cea3e2"
-}
-/*******************************************************************/
+###### Headers Obrigatorios: headers {  "Content-type": "application/json" }
 
-PUT: http://localhost:3030/developers/ID
+###### Retorno:
+    {   "nome": "Alisson",
+        "idade": 10,
+        "sexo": "M",
+        "hobby": "gazin",
+        "datanascimento": "1994-05-05T00:00:00.000Z",
+        "createdDate": "2021-01-31T14:33:29.406Z",
+        "__v": 0,
+        "id": "6016bfb9647aa60013cea3e2" }
 
-Headers Obrigatorios: headers {  "Content-type": "application/json" }
 
-Obrigatorio JSON exemplo:
+## PUT: http://localhost:3030/developers/ID
 
-{
-    "nome": "Alisson Seiji Aoki",
-    "sexo": "Masculino",
-    "idade": 25,
-    "hobby": "Desenvolver Aplicações",
-    "datanascimento": "1995-08-21"
-}
+###### Headers Obrigatorios: headers {  "Content-type": "application/json" }
 
-/*******************************************************************/
-DELETE: http://localhost:3030/developers/ID
+###### Obrigatorio JSON exemplo:
 
-Headers Obrigatorios: headers {  "Content-type": "application/json" }
+    { "nome": "Alisson Seiji Aoki",
+      "sexo": "Masculino",
+      "idade": 25,
+      "hobby": "Desenvolver Aplicações",
+      "datanascimento": "1995-08-21" }
+
+
+## DELETE: http://localhost:3030/developers/ID
+
+###### Headers Obrigatorios: headers {  "Content-type": "application/json" }
 
 Posteriormente podera ser realizado uma documentancao ultilizando por exemplo a ferramenta Petstore Swagger.
+
+## Teste unitarios
+
+##### Acessar a parta API_REST e rodar o comando npm test.
 
 
 
